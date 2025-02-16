@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Anime Search Bar</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f2e9e4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      background-image: url('https://i.imgur.com/h8GnwSR.png'); /* Лёгкий шум */
+      background-size: cover;
+      background-blend-mode: lighten;
+    }
+
+    .search-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .search-bar {
+      background-color: #ffffff;
+      border: 2px solid #000000;
+      box-shadow: 2px 2px 0px #000000;
+      font-size: 16px;
+      color: #000000;
+      padding: 10px 20px;
+      border-radius: 8px;
+      width: 300px;
+      outline: none;
+    }
+
+    .search-bar::placeholder {
+      color: #888888;
+      font-style: italic;
+      text-shadow: 1px 1px #000000;
+    }
+
+    .search-button {
+      margin-top: 10px;
+      background-color: #ffcc00;
+      border: 2px solid #000000;
+      box-shadow: 2px 2px 0px #000000;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000000;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      text-shadow: 1px 1px #ffffff;
+    }
+
+    .search-button:hover {
+      background-color: #ffa500;
+      box-shadow: 2px 2px 5px #000000;
+    }
+
+    .search-button:active {
+      box-shadow: 1px 1px 0px #000000;
+      transform: translate(1px, 1px);
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <input 
+      type="text" 
+      class="search-bar" 
+      placeholder="Введите название тайтла..."
+    >
+    <button class="search-button">Искать</button>
+  </div>
+</body>
+</html>
