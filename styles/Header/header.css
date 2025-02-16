@@ -1,0 +1,86 @@
+/* Стили для header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(135deg, #fff8e8, #fce4b6);
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #b0a08f;
+}
+ 
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: #b0a08f;
+    text-decoration: none;
+}
+
+
+.search-body{
+    font-family: 'Noto Serif JP', serif; /* Японский стиль */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+/* Контейнер для строки поиска */
+.search-container {
+    text-align: center;
+}
+/* Стиль строки поиска */
+.search-bar {
+    background-color: #ffffff;
+    border: 2px solid #d4a373;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 12px 20px;
+    width: 200px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search-bar:focus {
+    border-color: #a16c3b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.search-bar::placeholder {
+    color: #b0a08f;
+    font-style: italic;
+}
+  
+  /* Стиль кнопки поиска */
+.search-button {
+    margin-top: 20px;
+    background-color: #d4a373;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.search-button:hover {
+    background-color: #a16c3b;
+}
+  
+  /* Декоративный текст */
+.search-decor {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #8b7355;
+    font-style: italic;
+}

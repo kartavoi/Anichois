@@ -1,0 +1,8 @@
+.body{
+    background-color: rgb(148, 105, 85);
+    margin: 0;
+}
+.blcks2{
+    display: flex;
+    justify-content: space-around;
+}
